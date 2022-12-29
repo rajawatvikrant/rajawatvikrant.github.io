@@ -1,0 +1,70 @@
+/* fade right animation */
+
+    .revealright {
+    position: relative;
+    transform: translateX(40px);
+    opacity: 0;
+    transition: 1s all ease;
+    overflow: hidden;
+    }
+    .revealright.on {
+    transform: translateX(0);
+    opacity: 1;
+    }
+
+/* fade left animation */
+
+
+    .revealleft {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+    overflow: hidden;
+    }
+    .revealleft.on {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    
+/* fade down animation */
+
+    .revealdown {
+        position: relative;
+        transform: translateY(-150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+    .revealdown.on {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/* fade up animation */
+
+    .revealup {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+    .revealup.on {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+/* Responsiveness */
+
+
+    @media (max-width: 600px) {
+        .revealright {
+            position: relative;
+            transform: translateX(-150px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+        .revealright.on {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
